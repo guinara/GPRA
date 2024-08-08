@@ -125,6 +125,7 @@
 
     <div class="slidecontainer">
         <input type="range" min="1" max="100" value="2" class="slider" id="myRange">
+        <h1>Tempo: </h1>
     </div>
     <svg id="polar-bear-without-iceberg" width="395" height="444" viewBox="0 0 395 444" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -195,11 +196,11 @@
     slider.oninput = function () {
         const urso = document.getElementById("polar-bear-and-iceberg");
         const urso_triste = document.getElementById("polar-bear-without-iceberg");
-        const iceberg = document.querySelectorAll("iceberg");
+        const iceberg = document.querySelectorAll(".iceberg");
         let opacityValue = 1-slider.value/100;
         console.log(opacityValue);
         iceberg.forEach(element => {
-            element.setAttribute("style","opacity: ${opacityValue};");
+            element.style.opacity=opacityValue
         });
     }
 </script>
