@@ -1,0 +1,44 @@
+body {
+  font-family: 'Open Sans',sans-serif,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+b, strong {
+    font-weight: 700;
+  }
+  .subtitulo {
+    color: #000;
+    padding: 2% 6%;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 30%;
+    font-size: 64px;
+    line-height: 44px;
+
+}
+
+
+header {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('webfonts/leaguespartan-bold.eot');
+    src: url('webfonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/leaguespartan-bold.woff2') format('woff2'),
+        url('webfonts/leaguespartan-bold.woff') format('woff'),
+        url('webfonts/leaguespartan-bold.ttf') format('truetype'),
+        url('webfonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
